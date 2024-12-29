@@ -130,9 +130,12 @@ WantedBy=multi-user.target
 EOF
 ```
 
-# download snapshots
-# backup priv_validator_state.json
+**download snapshots**
+
+backup priv_validator_state.json
+```
 cp $HOME/.story/story/data/priv_validator_state.json $HOME/.story/story/priv_validator_state.json.backup
+```
 
 # remove old data and unpack Story snapshot
 rm -rf $HOME/.story/story/data
