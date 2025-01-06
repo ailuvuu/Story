@@ -168,9 +168,9 @@ Automatic Installation
 source <(curl -s https://itrocket.net/api/testnet/story/story-autoinstall/)
 ```
 
-Cosmovisor Setup
+**Cosmovisor Setup**
 Install go, if needed:
-
+```
 cd $HOME
 VER="1.22.3"
 wget "https://golang.org/dl/go$VER.linux-amd64.tar.gz"
@@ -181,6 +181,8 @@ rm "go$VER.linux-amd64.tar.gz"
 echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
 source $HOME/.bash_profile
 [ ! -d ~/go/bin ] && mkdir -p ~/go/bin
+```
+
 Install and init Cosmovisor:
 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@latest
