@@ -240,9 +240,11 @@ View your validator key
 story validator export
 ```
 
-Export EVM private key
-
+**Export EVM private key**
+```
 story validator export --export-evm-key
+```
+
 View EVM private key and make a key backup
 
 cat $HOME/.story/story/config/private_key.txt
